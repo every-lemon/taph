@@ -1,0 +1,16 @@
+[
+  ".github/workflows/checks.yml",
+  ".gitignore",
+  "CONTRIBUTING.md",
+  "LICENSE",
+  "README.md",
+  "SECURITY.md",
+  "docs/ARCHITECTURE.md",
+  "docs/LANGUAGE.md",
+  "docs/ROADMAP.md",
+  "docs/TESTING.md",
+  "examples/sum.kag",
+  "packaging/source-files.json",
+  "scripts/check_docs.py",
+  "scripts/check_source_inventory.py"
+]
