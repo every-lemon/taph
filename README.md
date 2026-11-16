@@ -4,6 +4,33 @@ A JavaScript-inspired, statically typed language planned for native compilation.
 
 **Status: language-design preview.** This repository contains specifications, illustrative examples and an implementation roadmap. There is no working compiler release yet, and no performance results are claimed. Existing JavaScript compatibility is not a goal for the first version.
 
+## What it looks like
+
+KagLang has no compiler and no interface yet, so there is nothing to screenshot. This is the kind of program the specification describes. It is **proposed syntax and cannot be run today**.
+
+```kag
+// Proposed syntax; requires the future compiler.
+fn sum(limit: i64): i64 {
+  let total = 0;
+  for (let i = 0; i < limit; i = i + 1) {
+    total = total + i;
+  }
+  return total;
+}
+fn main(): i64 {
+  print(i64ToString(sum(100)));
+  return 0;
+}
+```
+
+## How it is meant to work
+
+1. **You write familiar code.** Braces, functions and expressions look like JavaScript, but the language is not JavaScript-compatible.
+2. **Types are inferred.** `total` above has no annotation; the compiler works out that it is a 64-bit integer. You may add annotations where you want them.
+3. **A Rust compiler checks it.** Conversions must be explicit, arithmetic is defined, and reading past the end of a collection is an error instead of a silent bug.
+4. **LLVM produces native code.** The plan is ahead-of-time output for Linux on amd64 and arm64.
+5. **Claims wait for measurements.** No speed or compatibility claim will be made before the roadmap's tests and benchmarks exist.
+
 ## Design goals
 
 - Familiar braces, functions and expressions, with inferred static types and optional annotations.
