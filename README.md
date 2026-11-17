@@ -4,11 +4,11 @@ A JavaScript-inspired, statically typed language planned for native compilation.
 
 ## Status
 
-|                                      |                         |
-| ------------------------------------ | ----------------------- |
-| Stage                                | Language-design preview |
-| Compiler                             | None yet                |
-| Performance and compatibility claims | None until measured     |
+|                                      |                                          |
+| ------------------------------------ | ---------------------------------------- |
+| Stage                                | Language-design preview                  |
+| Compiler                             | There is no working compiler release yet |
+| Performance and compatibility claims | None until measured                      |
 
 ## Example
 
