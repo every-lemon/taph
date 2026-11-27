@@ -12,15 +12,15 @@ The runtime handles bounds/overflow traps, UTF-8 strings, reference counting and
 
 ## Planned command interfaces
 
-- `kag check path.kag [--json]`: parse, resolve and type-check without producing an executable.
-- `kag build path.kag -o program [--target TARGET] [-O0|-O2]`: produce a checked native executable; default target is the host, default optimization is O0.
-- `kag run path.kag -- [arguments]`: build in the configured cache and run with inherited standard streams; never implicitly download dependencies.
-- `kag fmt --check [paths]`: non-mutating source-format validation; formatting without `--check` is explicit.
+- `taph check path.tph [--json]`: parse, resolve and type-check without producing an executable.
+- `taph build path.tph -o program [--target TARGET] [-O0|-O2]`: produce a checked native executable; default target is the host, default optimization is O0.
+- `taph run path.tph -- [arguments]`: build in the configured cache and run with inherited standard streams; never implicitly download dependencies.
+- `taph fmt --check [paths]`: non-mutating source-format validation; formatting without `--check` is explicit.
 
 Initial native targets are `x86_64-unknown-linux-gnu` and `aarch64-unknown-linux-gnu`. Cross compilation requires an explicitly configured matching linker/sysroot. A successful cross-build is not execution qualification on the target.
 
 ## Repository layout
 
-`crates/kag-cli`, `crates/kag-frontend`, `crates/kag-ir`, `crates/kag-codegen`, `crates/kag-runtime`; `tests/conformance`, `tests/diagnostics`, `benchmarks`, `examples`, `docs`, `packaging`. These directories are planned; empty placeholder crates are not shipped as a compiler.
+`crates/taph-cli`, `crates/taph-frontend`, `crates/taph-ir`, `crates/taph-codegen`, `crates/taph-runtime`; `tests/conformance`, `tests/diagnostics`, `benchmarks`, `examples`, `docs`, `packaging`. These directories are planned; empty placeholder crates are not shipped as a compiler.
 
 No telemetry, network downloads or shell command interpolation belongs in compilation. Invoke the linker using argument arrays. Preserve license attribution for LLVM and every linked dependency.

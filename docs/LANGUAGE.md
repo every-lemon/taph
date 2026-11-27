@@ -1,4 +1,4 @@
-# KagLang 0.1 language contract — proposed
+# Taph 0.1 language contract — proposed
 
 This is a design baseline, not an implemented feature list. Changes require a specification PR and matching conformance cases.
 
@@ -24,13 +24,13 @@ There are no catchable exceptions in 0.1. Recoverable I/O uses explicit status r
 
 ## Modules, runtime and entrypoint
 
-Use `import { name } from "./module.kag";` with explicit relative module paths, and `export fn` or `export record`. Reject import cycles for 0.1. Module initialization follows dependency order. The program entry is `fn main(): i64`; its result becomes the process exit code, constrained to 0–255. Missing or duplicate entrypoints are compile errors.
+Use `import { name } from "./module.tph";` with explicit relative module paths, and `export fn` or `export record`. Reject import cycles for 0.1. Module initialization follows dependency order. The program entry is `fn main(): i64`; its result becomes the process exit code, constrained to 0–255. Missing or duplicate entrypoints are compile errors.
 
 The initial runtime exposes `print(string): void` and explicit numeric-to-string functions. File/network/process APIs, FFI and a public package registry are deferred. Implementing new runtime functionality requires a separate capability and error contract.
 
 ## Example
 
-```kag
+```taph
 fn sum(limit: i64): i64 {
   let total = 0;
   for (let i = 0; i < limit; i = i + 1) {

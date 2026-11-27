@@ -1,6 +1,6 @@
-# KagLang
+# Taph
 
-A JavaScript-inspired, statically typed language planned for native compilation.
+A Rust-inspired, statically typed language planned for native compilation.
 
 ## Status
 
@@ -14,7 +14,7 @@ A JavaScript-inspired, statically typed language planned for native compilation.
 
 Proposed syntax. It cannot be run today.
 
-```kag
+```taph
 fn sum(limit: i64): i64 {
   let total = 0;
   for (let i = 0; i < limit; i = i + 1) {
@@ -32,7 +32,7 @@ fn main(): i64 {
 
 | Goal            | Detail                                                           |
 | --------------- | ---------------------------------------------------------------- |
-| Familiar syntax | Braces, functions and expressions; not JavaScript-compatible     |
+| Rust-inspired    | Braces, functions and expressions; not Rust-compatible          |
 | Inferred types  | Static types with optional annotations                           |
 | Safe by default | Explicit conversions, defined arithmetic, bounds-checked access  |
 | Native output   | Rust compiler, LLVM ahead-of-time code for Linux amd64 and arm64 |
@@ -56,4 +56,4 @@ Discuss changes through issues and pull requests. Mark proposals as proposals; d
 
 ## License
 
-Apache-2.0. Programs compiled with KagLang are not covered by this license. Third-party components keep their own licenses.
+Apache-2.0. Programs compiled with Taph are not covered by this license. Third-party components keep their own licenses.

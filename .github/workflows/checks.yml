@@ -1,4 +1,4 @@
-name: KagLang specification
+name: Taph specification
 on:
   push:
     branches: [main]
