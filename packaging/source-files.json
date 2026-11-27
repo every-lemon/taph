@@ -9,7 +9,7 @@
   "docs/LANGUAGE.md",
   "docs/ROADMAP.md",
   "docs/TESTING.md",
-  "examples/sum.kag",
+  "examples/sum.tph",
   "packaging/source-files.json",
   "scripts/check_docs.py",
   "scripts/check_source_inventory.py"
