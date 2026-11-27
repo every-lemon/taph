@@ -1,0 +1,9 @@
+[package]
+name = "taph-spec-check"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Non-mutating specification and source-inventory checks for the Taph repository."
+publish = false
+
+[dependencies]

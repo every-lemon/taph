@@ -2,15 +2,17 @@
   ".github/workflows/checks.yml",
   ".gitignore",
   "CONTRIBUTING.md",
+  "Cargo.lock",
+  "Cargo.toml",
   "LICENSE",
   "README.md",
   "SECURITY.md",
+  "crates/taph-spec-check/Cargo.toml",
+  "crates/taph-spec-check/src/main.rs",
   "docs/ARCHITECTURE.md",
   "docs/LANGUAGE.md",
   "docs/ROADMAP.md",
   "docs/TESTING.md",
   "examples/sum.tph",
-  "packaging/source-files.json",
-  "scripts/check_docs.py",
-  "scripts/check_source_inventory.py"
+  "packaging/source-files.json"
 ]
